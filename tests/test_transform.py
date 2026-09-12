@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from transform import to_price_array
+from src.transform import to_price_array
 
 def test_to_price_array_converts_series_to_np():
     fake_series = pd.Series([100, 101, 102, 103, 104, 105, 106, 107, 108, 109])
