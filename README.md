@@ -67,7 +67,7 @@ Chase Coble
 * 1.0
     * Full functionality confirmed, plots are subpar presentation
 * 0.11
-    * Fixed bug where output/_dir was not set correctly
+    * Fixed bug where output_dir was not set correctly
 * 0.10
     * Claude implements plot saving
 * 0.9
@@ -86,7 +86,7 @@ Chase Coble
 * 0.3
     * Test written for rate-limit error handling
 * 0.2
-    * Claude implements to/_price/_array and fetch/_ticker
+    * Claude implements to_price_array and fetch_ticker
 * 0.1
     * Initial Release after two tests written
 
