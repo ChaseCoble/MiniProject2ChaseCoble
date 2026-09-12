@@ -97,4 +97,4 @@ Chase Coble
 * Full API reference in the [yFinance Reference](https://ranaroussi.github.io/yfinance/reference/index.html)
 
 ## AI Usage
-    * Claude Code utilized to create implementation code after human writing of tests. Human execution of tests and by-change diffanalysis.
+* Claude Code utilized to create implementation code after human writing of tests. Human execution of tests and by-change diff-analysis.
