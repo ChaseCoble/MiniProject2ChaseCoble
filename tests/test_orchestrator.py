@@ -31,3 +31,15 @@ def test_run_all_fetches_aborts_on_any_failure():
             run_all_fetches(TICKERS)
 
     assert mock_fetch.call_count == 3
+
+def test_run_all_fetches_keys_dict_by_ticker_name():
+    def side_effect(ticker):
+        return pd.Series([hash(ticker) % 1000] * 10)
+
+    with patch("src.orchestrator.fetch_ticker", side_effect=side_effect):
+        results = run_all_fetches(TICKERS)
+
+    assert set(results.keys()) == set(TICKERS)
+    for ticker in TICKERS:
+        expected = hash(ticker) % 1000
+        assert results[ticker].iloc[0] == expected
